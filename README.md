@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Sergey</h1>
-<h3 align="center">I 'am a mechanical design engineer and photographer. Now my way is to create great mobile apps for my own satisfaction and solving users problems.</h3>
+<h3 align="center">I 'am a mechanical design engineer and photographer. Now my way is to create great mobile apps for solving users problems and my own satisfaction.</h3>
 
 - 📫 How to reach me **sutemi67@gmail.com**
 

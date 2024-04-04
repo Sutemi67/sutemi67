@@ -27,6 +27,8 @@
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=sutemi67&show_icons=true)](https://github.com/sutemi67/github-readme-stats)
 
 <h4 align="left">Contacts:</h4>
-<p align="left"> <a href="mailto:sutemi67@gmail.com" target="_blank"> <img src="https://img.icons8.com/color/48/gmail--v1.png"  alt="android" width="40" height="40"/> </a><a href="https://t.me/Sutemi67" target="_blank" rel="noreferrer"> <img width="40" height="40" src="https://img.icons8.com/color/48/telegram-app--v1.png" alt="telegram-app--v1"/>
+<p align="left"> 
+  <a href="mailto:sutemi67@gmail.com" target="_blank"> <img src="https://img.icons8.com/color/96/gmail-new.png"  alt="android" width="40" height="40"/> </a>
+  <a href="https://t.me/Sutemi67" target="_blank" rel="noreferrer"> <img width="40" height="40" src="https://img.icons8.com/color/48/telegram-app--v1.png" alt="telegram-app--v1" width="40" height="40"/>
 
 

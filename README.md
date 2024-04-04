@@ -4,7 +4,7 @@
 <h4 align="left">Codewars timespending:</h4>
 <img src="https://www.codewars.com/users/Sutemi67/badges/small" >
 
-<h4 align="left">Technologies:</h4>
+<h4 align="left">I can:</h4>
 
 <!---
 картинки с сайта icons8 вставлять через кнопку скачать, там будет ссылка на png файл
@@ -16,7 +16,7 @@
   <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/css3.png" alt="css3" width="40" height="40"/> 
   </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/html-5--v1.png" alt="html5" width="40" height="40"/> </a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/javascript--v1.png" alt="javascript" width="40" height="40"/> </a>
-  <h5 align="left">Other tools:</h5>
+  <h5 align="left">I also can:</h5>
   <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/adobe-photoshop--v1.png" alt="photoshop" width="40" height="40"/> </a>
   <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/blender-3d.png" alt="blender" width="40" height="40"/> </a>
 </p>

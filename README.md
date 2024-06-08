@@ -26,6 +26,7 @@
   <a href="https://www.sbphoto.art/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/wordpress.png" alt="blender" width="40" height="40"/> </a>
   <a href="" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/google-sheets.png" alt="blender" width="40" height="40"/> </a>
   <a href="" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/notion--v1.png" alt="blender" width="40" height="40"/> </a>
+  <a href="https://sites.google.com" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/48/google-sites--v2.png" alt="google sites" width="40" height="40"/> </a>
 </p>
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sutemi67&layout=compact&size_weight=0.5&count_weight=0.5)<br>

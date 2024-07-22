@@ -13,9 +13,13 @@
   <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/android-os.png" alt="android" width="50" height="50"/> </a>
   <a href="https://developer.android.com/develop/ui/compose" target="_blank" rel="noreferrer"> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjC97Z8BResg5dlPqczsRCFhP6zewWX0X0e7fVPG-G7PuUZwwZVsi9OPoqJYkgqT2h0FI95SsmWzVEgpt8b8HAqFiIxZ98TFtY4lE0b8UrtVJ2HrJebRwl6C9DslsQDl9KnBIrdHS6LtkY/s1600/jetpack+compose+icon_RGB.png" alt="android" width="50" height="50"/> </a>
   <a href="https://kotlinlang.org" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/kotlin.png" alt="kotlin" width="50" height="50"/> </a>
-  <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png" alt="java" width="50" height="50"/> </a>
   
   <h5 align="left">I also can:</h5>
+  <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png" alt="java" width="40" height="40"/> </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/javascript--v1.png" alt="javascript" width="40" height="40"/> </a>
+  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/css3.png" alt="css3" width="40" height="40"/> </a> 
+  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/html-5--v1.png" alt="html5" width="40" height="40"/> </a>
+  
   <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/adobe-photoshop--v1.png" alt="photoshop" width="40" height="40"/> </a>
   <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/blender-3d.png" alt="blender" width="40" height="40"/> </a>
   <a href="https://www.solidworks.com/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/solidworks.png" alt="blender" width="40" height="40"/> </a>
@@ -25,10 +29,6 @@
   <a href="" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/notion--v1.png" alt="blender" width="40" height="40"/> </a>
   <a href="" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/fluency/48/unity.png" alt="unity" width="40" height="40"/> </a>
   <a href="https://sites.google.com" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/48/google-sites--v2.png" alt="google sites" width="40" height="40"/> </a>
-  
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/javascript--v1.png" alt="javascript" width="40" height="40"/> </a>
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/css3.png" alt="css3" width="40" height="40"/> </a> 
-  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/html-5--v1.png" alt="html5" width="40" height="40"/> </a>
 </p>
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sutemi67&layout=compact&size_weight=0.5&count_weight=0.5)<br>

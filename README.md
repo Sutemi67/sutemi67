@@ -10,10 +10,10 @@
 картинки с сайта icons8 вставлять через кнопку скачать, там будет ссылка на png файл
 -->
 <p align="left"> 
-  <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/android-os.png" alt="android" width="45" height="45"/> </a>
-  <a href="https://developer.android.com/develop/ui/compose" target="_blank" rel="noreferrer"> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjC97Z8BResg5dlPqczsRCFhP6zewWX0X0e7fVPG-G7PuUZwwZVsi9OPoqJYkgqT2h0FI95SsmWzVEgpt8b8HAqFiIxZ98TFtY4lE0b8UrtVJ2HrJebRwl6C9DslsQDl9KnBIrdHS6LtkY/s1600/jetpack+compose+icon_RGB.png" alt="android" width="45" height="45"/> </a>
-  <a href="https://kotlinlang.org" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/kotlin.png" alt="kotlin" width="45" height="45"/> </a>
-  <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png" alt="java" width="45" height="45"/> </a>
+  <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/android-os.png" alt="android" width="50" height="50"/> </a>
+  <a href="https://developer.android.com/develop/ui/compose" target="_blank" rel="noreferrer"> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjC97Z8BResg5dlPqczsRCFhP6zewWX0X0e7fVPG-G7PuUZwwZVsi9OPoqJYkgqT2h0FI95SsmWzVEgpt8b8HAqFiIxZ98TFtY4lE0b8UrtVJ2HrJebRwl6C9DslsQDl9KnBIrdHS6LtkY/s1600/jetpack+compose+icon_RGB.png" alt="android" width="50" height="50"/> </a>
+  <a href="https://kotlinlang.org" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/kotlin.png" alt="kotlin" width="50" height="50"/> </a>
+  <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png" alt="java" width="50" height="50"/> </a>
   
   <h5 align="left">I also can:</h5>
   <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/adobe-photoshop--v1.png" alt="photoshop" width="40" height="40"/> </a>

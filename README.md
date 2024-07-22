@@ -19,6 +19,8 @@
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/javascript--v1.png" alt="javascript" width="40" height="40"/> </a>
   <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/css3.png" alt="css3" width="40" height="40"/> </a> 
   <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/html-5--v1.png" alt="html5" width="40" height="40"/> </a>
+  <a href="" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/48/c-sharp-logo.png" alt="html5" width="40" height="40"/> </a>
+  <a href="" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/fluency/48/unity.png" alt="unity" width="40" height="40"/> </a>
   
   <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/adobe-photoshop--v1.png" alt="photoshop" width="40" height="40"/> </a>
   <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/blender-3d.png" alt="blender" width="40" height="40"/> </a>
@@ -27,8 +29,8 @@
   <a href="https://www.sbphoto.art/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/wordpress.png" alt="blender" width="40" height="40"/> </a>
   <a href="" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/google-sheets.png" alt="blender" width="40" height="40"/> </a>
   <a href="" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/notion--v1.png" alt="blender" width="40" height="40"/> </a>
-  <a href="" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/fluency/48/unity.png" alt="unity" width="40" height="40"/> </a>
   <a href="https://sites.google.com" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/48/google-sites--v2.png" alt="google sites" width="40" height="40"/> </a>
+ 
 </p>
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sutemi67&layout=compact&size_weight=0.5&count_weight=0.5)<br>

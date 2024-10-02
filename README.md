@@ -1,9 +1,6 @@
 <h1 align="center">Hi, I'm Sergey</h1>
 <h3 align="center">I 'am a mechanical design engineer and photographer. <br/> Now my way is to create great mobile apps for my own satisfaction.</h3>
 
-<h4 align="left">Codewars timespending:</h4>
-<img src="https://www.codewars.com/users/Sutemi67/badges/small" >
-
 <h4 align="left">I can:</h4>
 
 <!---
@@ -35,7 +32,6 @@
 </p>
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sutemi67&layout=compact&size_weight=0.5&count_weight=0.5)<br>
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=sutemi67&show_icons=true)](https://github.com/sutemi67/github-readme-stats)
 
 <h4 align="left">Contacts:</h4>
 <p align="left"> 

@@ -1,5 +1,5 @@
 <h1 align="center">Hi, I'm Sergey</h1>
-<h3 align="center">I 'am a mechanical design engineer and photographer. <br/> Now my way is to create great mobile apps for my own satisfaction.</h3>
+<h3 align="center">Previously, I was the lead mechanical design engineer. <br/> Now my way is to create mobile apps for my own satisfaction.</h3>
 
 <h4 align="left">I can:</h4>
 

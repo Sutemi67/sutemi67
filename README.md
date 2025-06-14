@@ -19,6 +19,7 @@
   <a href="" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/fluency/48/unity.png" alt="unity" width="40" height="40"/> </a>
   <a href="" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/48/python--v1.png" alt="python" width="40" height="40"/> </a>
   <a href="https://flutter.dev/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/48/flutter.png" alt="flutter" width="40" height="40"/> </a>
+  <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/48/postgreesql.png" alt="postgreSQL" width="40" height="40"/> </a>
   
   <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/adobe-photoshop--v1.png" alt="photoshop" width="30" height="30"/> </a>
   <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/blender-3d.png" alt="blender" width="30" height="30"/> </a>

@@ -20,14 +20,14 @@
   <a href="" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/48/python--v1.png" alt="python" width="40" height="40"/> </a>
   <a href="https://flutter.dev/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/48/flutter.png" alt="flutter" width="40" height="40"/> </a>
   
-  <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/adobe-photoshop--v1.png" alt="photoshop" width="40" height="40"/> </a>
-  <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/blender-3d.png" alt="blender" width="40" height="40"/> </a>
-  <a href="https://www.solidworks.com/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/solidworks.png" alt="blender" width="40" height="40"/> </a>
-  <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/48/figma--v1.png" alt="figma" width="40" height="40"/> </a>
-  <a href="https://www.sbphoto.art/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/wordpress.png" alt="blender" width="40" height="40"/> </a>
-  <a href="" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/google-sheets.png" alt="blender" width="40" height="40"/> </a>
-  <a href="" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/notion--v1.png" alt="blender" width="40" height="40"/> </a>
-  <a href="https://sites.google.com" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/48/google-sites--v2.png" alt="google sites" width="40" height="40"/> </a>
+  <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/adobe-photoshop--v1.png" alt="photoshop" width="30" height="30"/> </a>
+  <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/blender-3d.png" alt="blender" width="30" height="30"/> </a>
+  <a href="https://www.solidworks.com/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/solidworks.png" alt="blender" width="30" height="30"/> </a>
+  <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/48/figma--v1.png" alt="figma" width="30" height="30"/> </a>
+  <a href="https://www.sbphoto.art/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/wordpress.png" alt="blender" width="30" height="30"/> </a>
+  <a href="" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/google-sheets.png" alt="blender" width="30" height="30"/> </a>
+  <a href="" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/96/notion--v1.png" alt="blender" width="30" height="30"/> </a>
+  <a href="https://sites.google.com" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/48/google-sites--v2.png" alt="google sites" width="30" height="30"/> </a>
  
 </p>
 

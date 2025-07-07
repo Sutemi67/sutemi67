@@ -32,9 +32,6 @@
   <a href="https://sites.google.com" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/color/48/google-sites--v2.png" alt="google sites" width="30" height="30"/> </a>
  
 </p>
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sutemi67&layout=compact&size_weight=0.5&count_weight=0.5&langs_count=19&&exclude_repo=Unity_FirstGame_game)<br>
-
 <h4 align="left">Contacts:</h4>
 <p align="left"> 
   <a href="mailto:sutemi67@gmail.com" target="_blank"> <img src="https://img.icons8.com/color/96/gmail-new.png"  alt="android" width="40" height="40"/> </a>

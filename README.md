@@ -23,6 +23,7 @@
   <img src="https://img.icons8.com/color/48/python--v1.png" alt="python" width="40" height="40"/>
   <img src="https://img.icons8.com/color/48/flutter.png" alt="flutter" width="40" height="40"/> 
   <img src="https://img.icons8.com/color/48/postgreesql.png" alt="postgreSQL" width="40" height="40"/> 
+  <img  src="https://img.icons8.com/color/48/linux--v1.png" alt="linux--v1" width="40" height="40"/>
   </div>
   <div >
   <img src="https://img.icons8.com/color/96/adobe-photoshop--v1.png" alt="photoshop" width="30" height="30"/>

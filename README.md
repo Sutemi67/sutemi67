@@ -10,7 +10,8 @@
 <p align="left"> 
   <img src="https://img.icons8.com/color/96/android-os.png" alt="android" width="50" height="50"/>
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjC97Z8BResg5dlPqczsRCFhP6zewWX0X0e7fVPG-G7PuUZwwZVsi9OPoqJYkgqT2h0FI95SsmWzVEgpt8b8HAqFiIxZ98TFtY4lE0b8UrtVJ2HrJebRwl6C9DslsQDl9KnBIrdHS6LtkY/s1600/jetpack+compose+icon_RGB.png" alt="android" width="50" height="50"/> 
-   <img src="https://img.icons8.com/color/96/kotlin.png" alt="kotlin" width="50" height="50"/> 
+  <img src="https://img.icons8.com/color/96/kotlin.png" alt="kotlin" width="50" height="50"/>
+  <img src="https://img.icons8.com/color/48/flutter.png" alt="flutter" width="50" height="50"/> 
   </div>
   <h5 align="left">I also can:</h5>
   <div >
@@ -21,7 +22,6 @@
   <img src="https://img.icons8.com/color/48/c-sharp-logo.png" alt="html5" width="40" height="40"/>
   <img src="https://img.icons8.com/fluency/48/unity.png" alt="unity" width="40" height="40"/>
   <img src="https://img.icons8.com/color/48/python--v1.png" alt="python" width="40" height="40"/>
-  <img src="https://img.icons8.com/color/48/flutter.png" alt="flutter" width="40" height="40"/> 
   <img src="https://img.icons8.com/color/48/postgreesql.png" alt="postgreSQL" width="40" height="40"/> 
   <img  src="https://img.icons8.com/color/48/linux--v1.png" alt="linux--v1" width="40" height="40"/>
   </div>

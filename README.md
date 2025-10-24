@@ -40,9 +40,7 @@
 <p align="left"> 
   <a href="mailto:sutemi67@gmail.com" target="_blank"> <img src="https://img.icons8.com/color/96/gmail-new.png"  alt="android" width="40" height="40"/> </a>
   <a href="https://t.me/Sutemi67" target="_blank" rel="noreferrer"> <img width="40" height="40" src="https://img.icons8.com/color/48/telegram-app--v1.png" alt="telegram-app--v1" width="40" height="40"/>
-<p>
- ... or visit <a href="https://sutemi67.github.io/" /> my website
-</p>
+<h4> ... or visit <a href="https://sutemi67.github.io/" />my website</h4>
    
 
 

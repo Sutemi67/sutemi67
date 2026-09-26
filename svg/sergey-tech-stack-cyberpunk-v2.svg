@@ -1,0 +1,303 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100" role="img" aria-labelledby="title desc">
+  <title id="title">My Technology Stack</title>
+  <desc id="desc">Cyberpunk technology stack diagram showing Product, UI, Backend, Kotlin, Flutter, Dart, Rust, Docker, CI/CD and deployment technologies.</desc>
+
+  <defs>
+    <!-- Purple cyberpunk background -->
+    <radialGradient id="bg" cx="50%" cy="44%" r="76%">
+      <stop offset="0" stop-color="#21133d"/>
+      <stop offset="0.38" stop-color="#100b21"/>
+      <stop offset="0.72" stop-color="#080712"/>
+      <stop offset="1" stop-color="#030308"/>
+    </radialGradient>
+
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#9d97ff" stop-opacity=".28"/>
+      <stop offset=".45" stop-color="#736cee" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#736cee" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17112a" stop-opacity=".96"/>
+      <stop offset="1" stop-color="#090813" stop-opacity=".98"/>
+    </linearGradient>
+
+    <linearGradient id="cardAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#736cee"/>
+      <stop offset=".5" stop-color="#9d97ff"/>
+      <stop offset="1" stop-color="#4a42cc"/>
+    </linearGradient>
+
+    <linearGradient id="greenLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#10b981" stop-opacity=".25"/>
+      <stop offset=".5" stop-color="#39ff9a"/>
+      <stop offset="1" stop-color="#10b981" stop-opacity=".9"/>
+    </linearGradient>
+
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#9d97ff" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+
+    <pattern id="microgrid" width="15" height="15" patternUnits="userSpaceOnUse">
+      <path d="M15 0H0V15" fill="none" stroke="#9d97ff" stroke-opacity=".018" stroke-width=".7"/>
+    </pattern>
+
+    <filter id="glow" x="-40%" y="-80%" width="180%" height="260%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="smallGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="shadow" x="-30%" y="-40%" width="160%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity=".55"/>
+    </filter>
+
+    <clipPath id="frame"><rect x="18" y="18" width="1764" height="1064" rx="34"/></clipPath>
+
+    <!-- Arrowheads -->
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#39ff9a"/>
+    </marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#8b84ff"/>
+    </marker>
+
+    <style>
+      .sans{font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif}
+      .mono{font-family:'SFMono-Regular',Consolas,'Liberation Mono','Courier New',monospace}
+      .title{fill:#f4f1ff;font-size:25px;font-weight:650;letter-spacing:.5px}
+      .label{fill:#e9e5fa;font-size:18px;font-weight:600;letter-spacing:.2px}
+      .small{fill:#aaa3c7;font-size:13px}
+      .tiny{fill:#7e7897;font-size:11px;letter-spacing:1.4px}
+      .card{fill:url(#card);stroke:#3c3457;stroke-width:1.5}
+      .mainCard{fill:url(#card);stroke:#6f67e8;stroke-width:2}
+      .greenCard{fill:url(#card);stroke:#10b981;stroke-width:1.7}
+      .primary{fill:none;stroke:url(#greenLine);stroke-width:4;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowGreen);filter:url(#smallGlow)}
+      .secondary{fill:none;stroke:#726aa8;stroke-opacity:.62;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowPurple)}
+      .dotted{fill:none;stroke:#a59eff;stroke-opacity:.82;stroke-width:2.8;stroke-linecap:round;stroke-dasharray:4 12;marker-end:url(#arrowPurple)}
+      .flow{stroke-dasharray:4 12;animation:flow 1.25s linear infinite}
+      .flowSlow{stroke-dasharray:4 12;animation:flow 1.8s linear infinite}
+      .pulse{animation:pulse 2.8s ease-in-out infinite}
+      .blink{animation:blink 3.5s ease-in-out infinite}
+      .scan{animation:scan 8s linear infinite}
+      .orbit{transform-box:fill-box;transform-origin:center;animation:spin 34s linear infinite}
+      @keyframes flow{to{stroke-dashoffset:-16}}
+      @keyframes pulse{0%,100%{opacity:.38}50%{opacity:1}}
+      @keyframes blink{0%,100%{opacity:.45}50%{opacity:1}}
+      @keyframes scan{from{transform:translateY(-1100px)}to{transform:translateY(1100px)}}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @media (prefers-reduced-motion:reduce){
+        .flow,.flowSlow,.pulse,.blink,.scan,.orbit{animation:none}
+      }
+    </style>
+  </defs>
+
+  <rect width="1800" height="1100" rx="36" fill="url(#bg)"/>
+  <rect width="1800" height="1100" rx="36" fill="url(#grid)"/>
+  <rect width="1800" height="1100" rx="36" fill="url(#microgrid)"/>
+
+  <!-- ambient core -->
+  <circle cx="900" cy="420" r="370" fill="url(#coreGlow)" class="pulse"/>
+  <g opacity=".42" class="orbit" fill="none" stroke="#736cee">
+    <ellipse cx="900" cy="420" rx="320" ry="160" stroke-width="1" stroke-dasharray="2 18"/>
+    <ellipse cx="900" cy="420" rx="390" ry="205" stroke-width="1" stroke-opacity=".35" stroke-dasharray="1 24"/>
+  </g>
+
+  <!-- scanline -->
+  <rect x="0" y="0" width="1800" height="2" fill="#9d97ff" opacity=".08" class="scan"/>
+
+  <!-- header -->
+  <text x="70" y="72" class="mono tiny">SYSTEM / STACK MAP / 2026</text>
+  <text x="70" y="111" class="sans title">MY TECHNOLOGY STACK</text>
+  <path d="M70 132H510" stroke="url(#greenLine)" stroke-width="2"/>
+  <circle cx="525" cy="132" r="3" fill="#39ff9a" filter="url(#smallGlow)" class="blink"/>
+  <text x="1730" y="72" text-anchor="end" class="mono tiny">ANDROID · FLUTTER · BACKEND · SYSTEMS</text>
+
+  <!-- CENTRAL PRODUCT -->
+  <g filter="url(#shadow)">
+    <rect x="760" y="150" width="280" height="82" rx="14" class="mainCard"/>
+    <rect x="760" y="150" width="280" height="4" rx="2" fill="url(#greenLine)"/>
+    <text x="900" y="187" text-anchor="middle" class="mono tiny">ROOT / PRODUCT</text>
+    <text x="900" y="216" text-anchor="middle" class="sans label">Product Software</text>
+  </g>
+
+  <!-- Product split -->
+  <path d="M900 232V272H500V308" class="primary"/>
+  <path d="M900 232V272H1300V308" class="primary"/>
+
+  <!-- UI / BACKEND -->
+  <g filter="url(#shadow)">
+    <rect x="360" y="308" width="280" height="76" rx="12" class="greenCard"/>
+    <text x="500" y="341" text-anchor="middle" class="mono tiny">01 / PRESENTATION</text>
+    <text x="500" y="369" text-anchor="middle" class="sans label">UI</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="1160" y="308" width="280" height="76" rx="12" class="greenCard"/>
+    <text x="1300" y="341" text-anchor="middle" class="mono tiny">02 / SERVICES</text>
+    <text x="1300" y="369" text-anchor="middle" class="sans label">Backend</text>
+  </g>
+
+  <!-- UI branches -->
+  <path d="M500 384V430H270V474" class="primary"/>
+  <path d="M500 384V430H500V474" class="primary"/>
+  <path d="M500 384V430H730V474" class="dotted flow"/>
+
+  <!-- Backend branches -->
+  <path d="M1300 384V430H1110V474" class="primary"/>
+  <path d="M1300 384V430H1300V474" class="primary"/>
+  <path d="M1300 384V430H1490V474" class="dotted flow"/>
+  <path d="M1300 384V430H1690V650" class="secondary"/>
+
+  <!-- UI technology cards -->
+  <g filter="url(#shadow)">
+    <rect x="120" y="474" width="260" height="88" rx="12" class="mainCard"/>
+    <text x="250" y="509" text-anchor="middle" class="mono tiny">CROSS-PLATFORM UI</text>
+    <text x="250" y="540" text-anchor="middle" class="sans label">Flutter</text>
+    <!-- <text x="270" y="558" text-anchor="middle" class="small">Dart · Desktop · Multiplatform</text> -->
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="400" y="474" width="260" height="88" rx="12" class="mainCard"/>
+    <text x="500" y="509" text-anchor="middle" class="mono tiny">NATIVE UI</text>
+    <text x="500" y="540" text-anchor="middle" class="sans label">Kotlin</text>
+    <!-- <text x="500" y="558" text-anchor="middle" class="small">Android native</text> -->
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="650" y="474" width="260" height="88" rx="12" class="card"/>
+    <text x="730" y="509" text-anchor="middle" class="mono tiny">EXPERIMENTAL UI</text>
+    <text x="730" y="540" text-anchor="middle" class="sans label">Rust egui</text>
+    <!-- <text x="730" y="558" text-anchor="middle" class="small">Desktop / native tools</text> -->
+  </g>
+
+  <!-- Flutter ecosystem -->
+  <path d="M270 562V610H145V660" class="primary"/>
+  <path d="M270 562V610H395V660" class="primary"/>
+  <g>
+    <rect x="40" y="660" width="210" height="68" rx="11" class="card"/>
+    <text x="145" y="690" text-anchor="middle" class="sans label">Desktop</text>
+    <text x="145" y="711" text-anchor="middle" class="small">Windows / Linux</text>
+  </g>
+  <g>
+    <rect x="290" y="660" width="210" height="68" rx="11" class="card"/>
+    <text x="395" y="690" text-anchor="middle" class="sans label">Multiplatform</text>
+    <text x="395" y="711" text-anchor="middle" class="small">single UI codebase</text>
+  </g>
+
+  <!-- Kotlin ecosystem -->
+  <path d="M500 562V610H545V660" class="primary"/>
+  <path d="M500 562V610H725V660" class="dotted flowSlow"/>
+  <g>
+    <rect x="515" y="660" width="210" height="68" rx="11" class="card"/>
+    <text x="620" y="690" text-anchor="middle" class="sans label">Android native</text>
+    <text x="620" y="711" text-anchor="middle" class="small">Compose / Views</text>
+  </g>
+  <g>
+    <rect x="760" y="660" width="210" height="68" rx="11" class="card"/>
+    <text x="865" y="690" text-anchor="middle" class="sans label">Multiplatform</text>
+    <text x="865" y="711" text-anchor="middle" class="small">KMP / Compose</text>
+  </g>
+
+  <!-- Backend cards -->
+  <g filter="url(#shadow)">
+    <rect x="980" y="474" width="260" height="88" rx="12" class="mainCard"/>
+    <text x="1110" y="509" text-anchor="middle" class="mono tiny">APPLICATION BACKEND</text>
+    <text x="1110" y="540" text-anchor="middle" class="sans label">Dart</text>
+    <text x="1110" y="558" text-anchor="middle" class="small">startup · simple services · low RAM</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1170" y="474" width="260" height="88" rx="12" class="mainCard"/>
+    <text x="1300" y="509" text-anchor="middle" class="mono tiny">LONG-LIVED SERVICES</text>
+    <text x="1300" y="540" text-anchor="middle" class="sans label">Kotlin</text>
+    <text x="1300" y="558" text-anchor="middle" class="small">concurrency · high load</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1440" y="474" width="260" height="88" rx="12" class="greenCard"/>
+    <text x="1570" y="509" text-anchor="middle" class="mono tiny">SYSTEMS / PERFORMANCE</text>
+    <text x="1570" y="540" text-anchor="middle" class="sans label">Rust</text>
+    <text x="1570" y="558" text-anchor="middle" class="small">servers · optimization · FFI</text>
+  </g>
+
+  <!-- Rust special branch -->
+  <path d="M1570 562V610H1530V660" class="dotted flow"/>
+  <g>
+    <rect x="1430" y="660" width="210" height="68" rx="11" class="card"/>
+    <text x="1535" y="690" text-anchor="middle" class="sans label">In-app FFI</text>
+    <text x="1535" y="711" text-anchor="middle" class="small">native acceleration</text>
+  </g>
+  <!-- DELIVERY / BUILD OUTPUTS
+       These are intentionally single instances:
+       UI      -> GitHub Actions -> Publishing
+       Backend -> GitHub Actions -> Server deployment
+               -> Docker
+  -->
+
+  <!-- UI delivery path -->
+  <path d="M500 562V748" class="secondary"/>
+  <g filter="url(#shadow)">
+    <rect x="300" y="748" width="400" height="104" rx="14" class="card"/>
+    <text x="500" y="781" text-anchor="middle" class="mono tiny">UI / CLIENT DELIVERY</text>
+    <text x="500" y="812" text-anchor="middle" class="sans label">GitHub Actions</text>
+    <text x="500" y="836" text-anchor="middle" class="small">build APK / EXE</text>
+  </g>
+
+  <path d="M500 852V900" class="primary"/>
+  <g filter="url(#shadow)">
+    <rect x="360" y="900" width="280" height="74" rx="12" class="greenCard"/>
+    <text x="500" y="931" text-anchor="middle" class="mono tiny">OUTPUT</text>
+    <text x="500" y="958" text-anchor="middle" class="sans label">Publishing</text>
+  </g>
+
+  <!-- Backend delivery paths -->
+  <path d="M1300 562V650H930V748" class="secondary"/>
+  <g filter="url(#shadow)">
+    <rect x="730" y="748" width="400" height="104" rx="14" class="card"/>
+    <text x="930" y="781" text-anchor="middle" class="mono tiny">BACKEND / SERVER DELIVERY</text>
+    <text x="930" y="812" text-anchor="middle" class="sans label">GitHub Actions</text>
+    <text x="930" y="836" text-anchor="middle" class="small">build EXE → SCP → nohup / kill / systemd</text>
+  </g>
+
+  <!-- Docker is a separate backend output, not a duplicate -->
+  <path d="M1300 562V748" class="secondary"/>
+  <g filter="url(#shadow)">
+    <rect x="1180" y="748" width="300" height="104" rx="14" class="card"/>
+    <text x="1330" y="781" text-anchor="middle" class="mono tiny">BACKEND RUNTIME</text>
+    <text x="1330" y="812" text-anchor="middle" class="sans label">Docker</text>
+    <text x="1330" y="836" text-anchor="middle" class="small">containerized deployment</text>
+  </g>
+
+
+  <!-- Footer -->
+  <path d="M70 958H1730" stroke="#3c3457" stroke-width="1"/>
+  <circle cx="70" cy="958" r="3" fill="#39ff9a" filter="url(#smallGlow)"/>
+  <text x="70" y="990" class="mono tiny">PRIMARY PATHS</text>
+  <line x1="170" y1="986" x2="225" y2="986" class="primary" style="stroke-width:3"/>
+  <text x="240" y="990" class="small">core stack</text>
+
+  <text x="410" y="990" class="mono tiny">EXPERIMENTAL PATHS</text>
+  <line x1="590" y1="986" x2="645" y2="986" class="dotted flow" style="stroke-width:3"/>
+  <text x="660" y="990" class="small">multiplatform / systems exploration</text>
+
+  <text x="1730" y="990" text-anchor="end" class="mono tiny">SB / APPCRADLE</text>
+
+  <!-- decorative corner marks -->
+  <g fill="none" stroke="#736cee" stroke-width="2" opacity=".7">
+    <path d="M38 118V38H118"/>
+    <path d="M1682 38H1762V118"/>
+    <path d="M38 982V1062H118"/>
+    <path d="M1682 1062H1762V982"/>
+  </g>
+
+  <g fill="#39ff9a">
+    <circle cx="44" cy="44" r="2.5" class="blink"/>
+    <circle cx="1756" cy="44" r="2.5" class="blink"/>
+    <circle cx="44" cy="1056" r="2.5" class="blink"/>
+    <circle cx="1756" cy="1056" r="2.5" class="blink"/>
+  </g>
+</svg>

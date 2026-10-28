@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1292 790" width="100%" role="img" aria-labelledby="t d">
+  <title id="t">Product architecture</title>
+  <desc id="d">Product splits into UI (Flutter, Kotlin, Rust egui) and Backend (Dart, Kotlin, Rust core). UI ships via GitHub Actions to publishing. Backend ships via GitHub Actions, then forks: a container path (Docker image, GHCR, docker compose) or a plain binary path (scp, chmod, systemd).</desc>
+
+  <style>
+    /*THEME-START*/
+    svg {
+      --bg: rgba(28,28,28,0);
+      --node: #252525;
+      --text: #cecfc9;
+      --muted: #a0a0a0;
+      --edge: #a0a0a0;
+      --stroke: rgba(255,255,255,0.28);
+      --primary: #736cee;
+      --primary-light: #9D97FF;
+      --accent: #8b5cf6;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --flutter: #5fb4f5;
+      --g1: #667eea;
+      --g2: #764ba2;
+    }
+    /*THEME-END*/
+
+    text { font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; fill: var(--text); font-size: 17px; dominant-baseline: central; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 15px; }
+    .small { font-size: 14px; fill: var(--muted); }
+    .tiny  { font-size: 12.5px; fill: var(--muted); }
+    .c { text-anchor: middle; }
+
+    .bg { fill: var(--bg); stroke: var(--stroke); stroke-opacity: .35; }
+    .n rect { fill: var(--node); stroke: var(--stroke); stroke-width: 2; }
+    .n.lvl     rect { stroke: var(--primary); }
+    .n.infra   rect { stroke: var(--primary-light); }
+    .n.flutter rect { stroke: var(--flutter); }
+    .n.kotlin  rect { stroke: var(--accent); }
+    .n.rust    rect { stroke: var(--warning); }
+    .n.dart    rect { stroke: var(--success); }
+    .n.root    rect.box { stroke: url(#gp); stroke-width: 2.5; }
+    .n.planned rect { stroke-dasharray: 3 5; stroke-linecap: round; }
+    .n.planned text { fill: var(--muted); }
+    .n.planned .tiny { opacity: .85; }
+
+    .e { fill: none; stroke: var(--edge); stroke-width: 2.2; stroke-linecap: round; stroke-dasharray: 7 6; animation: flow 1.1s linear infinite; }
+    .e.dot { stroke-width: 2.6; stroke-dasharray: 0.1 8; opacity: .55; animation-duration: 2.2s; }
+    .arrow { fill: var(--edge); }
+    .pulse { fill: var(--primary-light); }
+    .glow  { fill: var(--primary); opacity: .35; }
+
+    .n, .edge { opacity: 0; animation: appear .6s ease-out forwards; animation-delay: var(--d, 0s); }
+
+    @keyframes flow    { to { stroke-dashoffset: -26; } }
+    @keyframes appear  { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes breathe { 0%,100% { opacity: .18; } 50% { opacity: .5; } }
+    .n rect.root-glow { fill: url(#gp); stroke: none; animation: breathe 3.2s ease-in-out infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .e, .root-glow { animation: none; }
+      .n, .edge { animation-duration: .01s; animation-delay: 0s; }
+    }
+  </style>
+
+  <defs>
+    <linearGradient id="gp" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" style="stop-color:var(--g1)"/>
+      <stop offset="1" style="stop-color:var(--g2)"/>
+    </linearGradient>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path class="arrow" d="M0,0 L9,4.5 L0,9 z"/>
+    </marker>
+    <path id="mainUI" d="M513,40 H465 Q445,40 445,60 V707"/>
+    <path id="mainBE"  d="M636,40 H683 Q703,40 703,60 V615 H795 Q815,615 815,595 V580 Q815,560 835,560 H1150"/>
+    <path id="mainBE2" d="M636,40 H683 Q703,40 703,60 V615 H795 Q815,615 815,635 V670 Q815,690 835,690 H1150"/>
+  </defs>
+
+  <rect class="bg" x="0.5" y="0.5" width="1291" height="789" rx="16"/>
+
+  <!-- ============ EDGES ============ -->
+  <g marker-end="url(#ar)">
+    <!-- Product -> UI / Backend -->
+    <g class="edge" style="--d:.3s">
+      <path class="e" d="M513,40 H465 Q445,40 445,60 V138"/>
+      <path class="e" d="M636,40 H683 Q703,40 703,60 V138"/>
+    </g>
+    <!-- UI trunk + branches -->
+    <g class="edge" style="--d:.8s">
+      <path class="e" d="M445,180 V584"/>
+      <path class="e" d="M445,214 Q445,232 427,232 H370"/>
+      <path class="e" d="M445,360 Q445,378 427,378 H370"/>
+    </g>
+    <g class="edge" style="--d:1.2s">
+      <path class="e" d="M240,232 H228 Q208,232 208,212 Q208,203 196,203 H176"/>
+      <path class="e" d="M240,232 H228 Q208,232 208,252 Q208,271 190,271 H176"/>
+      <path class="e" d="M240,378 H228 Q208,378 208,358 Q208,341 190,341 H176"/>
+    </g>
+    <g class="edge" style="--d:1.4s"><path class="e" d="M445,646 V707"/></g>
+
+    <!-- Backend trunk + branches -->
+    <g class="edge" style="--d:.8s">
+      <path class="e" d="M703,180 V584"/>
+      <path class="e" d="M703,214 Q703,232 721,232 H758"/>
+      <path class="e" d="M703,297 Q703,315 721,315 H758"/>
+    </g>
+    <g class="edge" style="--d:1.2s">
+      <path class="e" d="M888,232 H977"/>
+      <path class="e" d="M888,315 H915 Q935,315 935,335 Q935,345 955,345 H977"/>
+    </g>
+    <!-- Backend delivery: fork into container path and binary path -->
+    <g class="edge" style="--d:1.6s">
+      <path class="e" d="M780,615 H795 Q815,615 815,595 V580 Q815,560 835,560 H850"/>
+      <path class="e" d="M780,615 H795 Q815,615 815,635 V670 Q815,690 835,690 H850"/>
+    </g>
+    <g class="edge" style="--d:2s">
+      <path class="e" d="M950,560 H1000"/>
+      <path class="e" d="M1100,560 H1150"/>
+      <path class="e" d="M950,690 H1000"/>
+      <path class="e" d="M1100,690 H1150"/>
+    </g>
+  </g>
+
+  <!-- planned (dotted) edges -->
+  <g marker-end="url(#ar)">
+    <g class="edge" style="--d:1.5s">
+      <path class="e dot" d="M445,460 Q445,478 427,478 H370"/>
+      <path class="e dot" d="M240,378 H228 Q208,378 208,398 Q208,410 196,410 H178"/>
+      <path class="e dot" d="M240,478 H178"/>
+      <path class="e dot" d="M703,380 Q703,398 721,398 H758"/>
+      <path class="e dot" d="M888,398 H915 Q935,398 935,378 V358 Q935,345 955,345 H977"/>
+      <path class="e dot" d="M935,398 Q935,448 955,448 H977"/>
+    </g>
+  </g>
+
+  <!-- ============ TRAVELLING PULSES (SMIL) — below nodes so they "pass through" boxes ============ -->
+  <g>
+    <circle class="glow" r="9"><animateMotion dur="5s" begin="2.4s" repeatCount="indefinite"><mpath href="#mainUI"/></animateMotion></circle>
+    <circle class="pulse" r="4"><animateMotion dur="5s" begin="2.4s" repeatCount="indefinite"><mpath href="#mainUI"/></animateMotion></circle>
+    <circle class="glow" r="9"><animateMotion dur="8s" begin="3.2s" repeatCount="indefinite"><mpath href="#mainBE"/></animateMotion></circle>
+    <circle class="pulse" r="4"><animateMotion dur="8s" begin="3.2s" repeatCount="indefinite"><mpath href="#mainBE"/></animateMotion></circle>
+    <circle class="glow" r="9"><animateMotion dur="8s" begin="7.2s" repeatCount="indefinite"><mpath href="#mainBE2"/></animateMotion></circle>
+    <circle class="pulse" r="4"><animateMotion dur="8s" begin="7.2s" repeatCount="indefinite"><mpath href="#mainBE2"/></animateMotion></circle>
+  </g>
+
+  <!-- ============ NODES ============ -->
+  <!-- root -->
+  <g class="n root" style="--d:0s">
+    <rect class="root-glow" x="507" y="10" width="135" height="60" rx="14"/>
+    <rect class="box" x="513" y="16" width="123" height="48" rx="10"/>
+    <text class="c" x="574.5" y="40">Product</text>
+  </g>
+
+  <!-- level 1 -->
+  <g class="n lvl" style="--d:.5s"><rect x="378" y="138" width="134" height="42" rx="8"/><text class="c" x="445" y="159">UI</text></g>
+  <g class="n lvl" style="--d:.5s"><rect x="640" y="138" width="126" height="42" rx="8"/><text class="c" x="703" y="159">Backend</text></g>
+
+  <!-- UI branch -->
+  <g class="n flutter" style="--d:1s"><rect x="240" y="211" width="130" height="42" rx="8"/><text class="c" x="305" y="232">Flutter</text></g>
+  <g class="n kotlin"  style="--d:1s"><rect x="240" y="357" width="130" height="42" rx="8"/><text class="c" x="305" y="378">Kotlin</text></g>
+  <g class="n rust planned" style="--d:1.3s"><rect x="240" y="457" width="130" height="42" rx="8"/><text class="c" x="305" y="478">Rust egui</text></g>
+
+  <g class="n flutter" style="--d:1.4s"><rect x="47" y="183" width="129" height="40" rx="8"/><text class="c" x="111.5" y="203">Desktop</text></g>
+  <g class="n flutter" style="--d:1.4s">
+    <rect x="17" y="249" width="159" height="44" rx="8"/>
+    <text class="c" x="96.5" y="263">Multiplatform</text>
+    <text class="c tiny" x="96.5" y="281">one codebase</text>
+  </g>
+  <g class="n kotlin" style="--d:1.4s"><rect x="17" y="321" width="159" height="40" rx="8"/><text class="c" x="96.5" y="341">Android native</text></g>
+  <g class="n kotlin planned" style="--d:1.6s">
+    <rect x="17" y="388" width="161" height="44" rx="8"/>
+    <text class="c" x="97.5" y="402">Multiplatform</text>
+    <text class="c tiny" x="97.5" y="420">KMP · Compose</text>
+  </g>
+  <g class="n rust planned" style="--d:1.6s">
+    <rect x="17" y="456" width="161" height="44" rx="8"/>
+    <text class="c" x="97.5" y="470">Multiplatform</text>
+    <text class="c tiny" x="97.5" y="488">egui</text>
+  </g>
+
+  <!-- Backend branch -->
+  <g class="n dart"   style="--d:1s"><rect x="758" y="211" width="130" height="42" rx="8"/><text class="c" x="823" y="232">Dart</text></g>
+  <g class="n kotlin" style="--d:1s"><rect x="758" y="294" width="130" height="42" rx="8"/><text class="c" x="823" y="315">Kotlin</text></g>
+  <g class="n rust planned" style="--d:1.3s"><rect x="758" y="377" width="130" height="42" rx="8"/><text class="c" x="823" y="398">Rust</text></g>
+
+  <g class="n dart" style="--d:1.4s">
+    <rect x="977" y="188" width="257" height="84" rx="6"/>
+    <text x="993" y="209">1. Fast startup, MVP speed</text>
+    <text x="993" y="230">2. Shared code with Flutter</text>
+    <text x="993" y="251">3. One language end-to-end</text>
+  </g>
+  <g class="n kotlin" style="--d:1.4s">
+    <rect x="977" y="293" width="298" height="103" rx="6"/>
+    <text x="993" y="319">1. Type-safe, long-lived projects</text>
+    <text x="993" y="344">2. Coroutines &amp; concurrency</text>
+    <text x="993" y="369">3. High load · Ktor</text>
+  </g>
+  <g class="n rust planned" style="--d:1.6s">
+    <rect x="977" y="420" width="223" height="56" rx="8"/>
+    <text class="c" x="1088.5" y="438">Shared Rust core</text>
+    <text class="c small" x="1088.5" y="459">flutter_rust_bridge · UniFFI</text>
+  </g>
+
+  <!-- UI delivery -->
+  <g class="n infra" style="--d:1.6s">
+    <rect x="365" y="584" width="160" height="62" rx="8"/>
+    <text class="c" x="445" y="604">GitHub Actions</text>
+    <text class="c small" x="445" y="627">build apk/exe</text>
+  </g>
+  <g class="n infra" style="--d:1.8s"><rect x="365" y="707" width="160" height="44" rx="8"/><text class="c" x="445" y="729">Publishing</text></g>
+
+  <!-- Backend delivery pipeline: GH Actions -> Docker -> GHCR -> Deploy -->
+  <g class="n infra" style="--d:1.6s">
+    <rect x="626" y="584" width="154" height="62" rx="8"/>
+    <text class="c" x="703" y="604">GitHub Actions</text>
+    <text class="c small" x="703" y="627">build · test</text>
+  </g>
+  <!-- path A: container -->
+  <text class="tiny" x="850" y="518">CONTAINER</text>
+  <g class="n infra" style="--d:1.9s">
+    <rect x="850" y="533" width="100" height="54" rx="8"/>
+    <text class="c" x="900" y="551">Docker</text>
+    <text class="c small" x="900" y="571">image</text>
+  </g>
+  <g class="n infra" style="--d:2.1s">
+    <rect x="1000" y="533" width="100" height="54" rx="8"/>
+    <text class="c" x="1050" y="551">GHCR</text>
+    <text class="c small" x="1050" y="571">registry</text>
+  </g>
+  <g class="n infra" style="--d:2.3s">
+    <rect x="1150" y="533" width="120" height="54" rx="8"/>
+    <text class="c" x="1210" y="551">Run</text>
+    <text class="c small" x="1210" y="571">docker compose</text>
+  </g>
+
+  <!-- path B: plain binary -->
+  <text class="tiny" x="850" y="648">BINARY</text>
+  <g class="n infra" style="--d:1.9s">
+    <rect x="850" y="663" width="100" height="54" rx="8"/>
+    <text class="c" x="900" y="681">Binary</text>
+    <text class="c small" x="900" y="701">build exe</text>
+  </g>
+  <g class="n infra" style="--d:2.1s">
+    <rect x="1000" y="663" width="100" height="54" rx="8"/>
+    <text class="c" x="1050" y="681">scp</text>
+    <text class="c small" x="1050" y="701">to server</text>
+  </g>
+  <g class="n infra" style="--d:2.3s">
+    <rect x="1150" y="663" width="120" height="54" rx="8"/>
+    <text class="c" x="1210" y="681">systemd</text>
+    <text class="c small" x="1210" y="701">chmod +x</text>
+  </g>
+
+  <!-- legend -->
+  <g class="n" style="--d:2.4s" transform="translate(1000 762)">
+    <rect x="0" y="0" width="22" height="14" rx="4" style="fill:transparent;stroke:var(--stroke)"/>
+    <text class="small" x="30" y="8">current</text>
+    <rect x="110" y="0" width="22" height="14" rx="4" style="fill:transparent;stroke:var(--stroke);stroke-dasharray:3 4;stroke-linecap:round"/>
+    <text class="small" x="140" y="8">planned</text>
+  </g>
+</svg>

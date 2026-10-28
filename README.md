@@ -3,3 +3,4 @@
 <h4 align="center">Can do. Can rule. Can't do nothing.</h3>
 <h5 align="center">visit <a href="https://sutemi67.github.io/" />my website for more info</h5>
 <!-- ![Tech Stack Architecture](./svg/sergey-tech-stack-cyberpunk-v2.svg) -->
+<img src="architecture-transparent.svg">

@@ -132,13 +132,33 @@
 
   <!-- ============ TRAVELLING PULSES (SMIL) — below nodes so they "pass through" boxes ============ -->
   <g>
-    <circle class="glow" r="9"><animateMotion dur="5s" begin="2.4s" repeatCount="indefinite"><mpath href="#mainUI"/></animateMotion></circle>
-    <circle class="pulse" r="4"><animateMotion dur="5s" begin="2.4s" repeatCount="indefinite"><mpath href="#mainUI"/></animateMotion></circle>
-    <circle class="glow" r="9"><animateMotion dur="8s" begin="3.2s" repeatCount="indefinite"><mpath href="#mainBE"/></animateMotion></circle>
-    <circle class="pulse" r="4"><animateMotion dur="8s" begin="3.2s" repeatCount="indefinite"><mpath href="#mainBE"/></animateMotion></circle>
-    <circle class="glow" r="9"><animateMotion dur="8s" begin="7.2s" repeatCount="indefinite"><mpath href="#mainBE2"/></animateMotion></circle>
-    <circle class="pulse" r="4"><animateMotion dur="8s" begin="7.2s" repeatCount="indefinite"><mpath href="#mainBE2"/></animateMotion></circle>
-  </g>
+  <circle class="glow" r="9" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="2.4s"/>
+    <animateMotion dur="5s" begin="2.4s" repeatCount="indefinite"><mpath href="#mainUI"/></animateMotion>
+  </circle>
+  <circle class="pulse" r="4" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="2.4s"/>
+    <animateMotion dur="5s" begin="2.4s" repeatCount="indefinite"><mpath href="#mainUI"/></animateMotion>
+  </circle>
+
+  <circle class="glow" r="9" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="3.2s"/>
+    <animateMotion dur="8s" begin="3.2s" repeatCount="indefinite"><mpath href="#mainBE"/></animateMotion>
+  </circle>
+  <circle class="pulse" r="4" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="3.2s"/>
+    <animateMotion dur="8s" begin="3.2s" repeatCount="indefinite"><mpath href="#mainBE"/></animateMotion>
+  </circle>
+
+  <circle class="glow" r="9" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="7.2s"/>
+    <animateMotion dur="8s" begin="7.2s" repeatCount="indefinite"><mpath href="#mainBE2"/></animateMotion>
+  </circle>
+  <circle class="pulse" r="4" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="7.2s"/>
+    <animateMotion dur="8s" begin="7.2s" repeatCount="indefinite"><mpath href="#mainBE2"/></animateMotion>
+  </circle>
+</g>
 
   <!-- ============ NODES ============ -->
   <!-- root -->

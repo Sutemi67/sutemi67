@@ -73,7 +73,7 @@
     <path id="mainBE2" d="M636,40 H683 Q703,40 703,60 V615 H795 Q815,615 815,635 V670 Q815,690 835,690 H1150"/>
   </defs>
 
-  <rect class="bg" x="0.5" y="0.5" width="1291" height="789" rx="16"/>
+  <!-- <rect class="bg" x="0.5" y="0.5" width="1291" height="789" rx="16"/> -->
 
   <!-- ============ EDGES ============ -->
   <g marker-end="url(#ar)">
